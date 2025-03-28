@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabajo Practico 1</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-slate-300">
+        <header class="bg-slate-700 text-white items-center">
+            <div class="mx-auto container flex justify-between">
+                <img src="html.png" class="w-14 h-14 p-1">
+                <h1 class="p-4 text-xl">
+                    ¿Que es HTML? El Lenguaje de la Web
+                </h1>
+                <nav>
+                    <ul class="hidden md:flex space-x-4 p-4">
+                        <li><a href="#" class="hover:underline">HTML</a></li>
+                        <li><a href="#" class="hover:underline">CSS</a></li>
+                        <li><a href="#" class="hover:underline">JavaScript</a></li>
+                    </ul>
+                    <button id="abrirmenu" class="md:hidden text-white p-4">☰</button>
+                </nav>
+            </div>
+            <div id="menumovil" class="hidden md:hidden bg-slate-800 text-white p-2">
+                <ul>
+                    <li><a href="#" class="block p-2 hover:underline">HTML</a></li>
+                    <li><a href="#" class="block p-2 hover:underline">CSS</a></li>
+                    <li><a href="#" class="block p-2 hover:underline">JavaScript</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="container mx-auto p-5">
+            <section class="bg-gray-500 rounded shadow-2xl text-white mb-6 p-5 ">
+                ¿Que es HTML? HTML (HyperText Markup Language) es el componente mas basico del web. Define el significado
+                y la estructura del contenido web. Ademas HTML, generalemente se utilizan otras tecnologias
+                para describir la apariencia/ presentacion de una pagina web (CSS) o la funcionalidad/comportamiento (JavaScript).
+                La version usada actualmente es HTML 5.
+            </section>
+            <div class="grid grid-cols-2 bg-gray-500 rounded shadow-2xl text-white mb-6 p-5">
+                <button>
+                    ¿Que es CSS?
+                    <div class="text-justify m-1 p-3">
+                        CSS (Cascading Style Sheets) es el lenguaje de estilos utilizado para describir la presentacion
+                        de documentos HTML o XML. CSS se describe como debe ser renderizado el elemnto estructurado en la pantalla
+                        , en papel, en el habla o en otros medios.
+                        CSS es uno de los lenguajes base de Open Web, y posee una especificacion estandarizada
+                        por aprte del W3C.
+                    </div>
+                </button>
+                <button>
+                    ¿Que es JavaScript?
+                    <div class="text-justify m-1 p-3">
+                        JavaScript (JS) es un lenguaje de programacion ligero, interpretado, o compilado just-in-time 
+                        con funciones de primera clase. Si bien es mas conocido como un lenguaje de scripting (secuencia de comandos)
+                        para paginas web, y es usado en mucho entornos fuera del navegador, tal como Node.js, Apache CouchDB y 
+                        Adobe Acrobat.
+                    </div>
+                </button>
+            </div>
+        </main>
+        <footer class="bg-slate-700 p-2 mt-11 text-white text-center">
+            <p>Franco Emanuel Giardino - 2025 - Lenguajes III</p>
+            <a href="https://www.instagram.com/giardinofranco/" class="inline-block mt-2">
+                <img src="instagram.png" class="w-8 h-8 inline">
+            </a>
+        </footer>
+        <script>
+            document.getElementById('abrirmenu').addEventListener('click', function () {
+                document.getElementById('menumovil').classList.toggle('hidden');
+            });
+        </script>
+    </body>
+</html>
